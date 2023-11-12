@@ -16,7 +16,9 @@
         pkgs = nixpkgs.legacyPackages.${system};
       in {
         devShell = pkgs.mkShell {
-          buildInputs = [pkgs.zola];
+          buildInputs = [
+            pkgs.zola
+          ];
           shellHook = ''
             $SHELL
           '';
