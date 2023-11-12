@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "zola build"
+command = "zola build --base-url $URL"
 
 [build.environment]
 ZOLA_VERSION = "0.17.2"
