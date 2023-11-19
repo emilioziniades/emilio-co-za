@@ -6,9 +6,9 @@
         <link href="/style.css" rel="stylesheet" />
     </head>
     <body>
-        <section>
-            <div class="container">
-                <a href="/" class="site-header">
+        <div class="container">
+            <header>
+                <a href="/" class="site-title">
                     <h1>Emilio Ziniades</h1>
                 </a>
                 <nav class="site-nav">
@@ -25,8 +25,10 @@
                         <a href="{{ get_url(path='@/contact/_index.md') }}">Contact</a>
                     </li>
                 </nav>
+            </header>
+            <section>
                 {% block content %}{% endblock %}
-            </div>
-        </section>
+            </section>
+        </div>
     </body>
 </html>

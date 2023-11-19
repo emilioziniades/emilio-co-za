@@ -2,36 +2,13 @@
   // border: 1px black solid;
 }
 
-@font-face {
-  font-family: "MonaspaceArgon";
-  src: url("fonts/MonaspaceArgon-Regular.woff") format("woff");
+@import "fonts";
+
+$black: #000000;
+
+p {
+  font-family: "NotoSerif";
   font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "MonaspaceArgon";
-  src: url("fonts/MonaspaceArgon-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "MonaspaceArgon";
-  src: url("fonts/MonaspaceArgon-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "MonaspaceArgon";
-  src: url("fonts/MonaspaceArgon-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-}
-
-h1 {
-  font-family: "MonaspaceArgon";
   font-style: normal;
 }
 
@@ -39,19 +16,41 @@ h1 {
   margin: 0 25%;
 }
 
-.site-header {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "NotoSans";
   font-weight: bold;
-  h1 {
-    margin: 0;
-    padding: 0;
-  }
+  font-style: normal;
 }
 
-.site-nav {
-  display: flex;
-  justify-content: space-between;
-  li {
-    list-style-type: none;
-    font-family: "MonaspaceArgon";
+header {
+  margin-top: 1rem;
+  font-family: "NotoSans";
+  // font-family: "MonaspaceArgon";
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .site-nav {
+    display: flex;
+    gap: 1rem;
+    li {
+      text-transform: uppercase;
+      list-style-type: none;
+    }
   }
 }
