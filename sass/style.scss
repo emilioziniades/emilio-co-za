@@ -1,0 +1,57 @@
+* {
+  // border: 1px black solid;
+}
+
+@font-face {
+  font-family: "MonaspaceArgon";
+  src: url("fonts/MonaspaceArgon-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MonaspaceArgon";
+  src: url("fonts/MonaspaceArgon-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MonaspaceArgon";
+  src: url("fonts/MonaspaceArgon-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "MonaspaceArgon";
+  src: url("fonts/MonaspaceArgon-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+h1 {
+  font-family: "MonaspaceArgon";
+  font-style: normal;
+}
+
+.container {
+  margin: 0 25%;
+}
+
+.site-header {
+  font-weight: bold;
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  li {
+    list-style-type: none;
+    font-family: "MonaspaceArgon";
+  }
+}
