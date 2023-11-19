@@ -1,13 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>MyBlog</title>
-  </head>
-
-  <body>
-    <section class="section">
-      <div class="container">{% block content %} {% endblock %}</div>
-    </section>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Emilio Ziniades</title>
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <a href="/">
+                    <h1>Emilio Ziniades</h1>
+                </a>
+                <nav>
+                    <li>
+                        <a href="{{ get_url(path='@/blog/_index.md') }}">Blog</a>
+                    </li>
+                    <li>
+                        <a href="{{ get_url(path='@/code/_index.md') }}">Code</a>
+                    </li>
+                    <li>
+                        <a href="{{ get_url(path='@/about/_index.md') }}">About</a>
+                    </li>
+                    <li>
+                        <a href="{{ get_url(path='@/contact/_index.md') }}">Contact</a>
+                    </li>
+                </nav>
+                {% block content %}{% endblock %}
+            </div>
+        </section>
+    </body>
 </html>
