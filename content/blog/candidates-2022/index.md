@@ -1,22 +1,8 @@
 ---
 title: "Candidates 2022: Opening Analysis"
-date: "2022-07-22T16:14:00+02:00"
+date: "2022-07-22"
 description: "An analysis of the chess openings used in the FIDE 2022 Candidates Tournament."
-type: "blog"
-page: "post"
-hero_image: "_"
-hero_image_alt: "_"
-hero_image_credit_text: "_"
-hero_image_credit_link: "_"
 ---
-
-import first_moves from "./first_moves.png"
-import first_moves_annotated from "./first_moves_annotated.png"
-import opening_categories from "./opening_categories.png"
-import opening_performance from "./opening_performance.png"
-import sicilian from "./sicilian.png"
-import petrov from "./petrov.png"
-import ruy_lopez from "./ruylopez.png"
 
 ## Introduction
 
@@ -43,7 +29,7 @@ A sensible place to start is to consider the first move of the game.
 There are 20 legal first moves in chess, but these elite players settled for only 4 of them.
 The chart below shows which were most common.
 
-<img src={first_moves} alt="First moves used" />
+![First moves used](first_moves.png)
 
 The move _1. e4_ made up the bulk of games.
 It comprised two-thirds of all games played, more than all the other first moves combined.
@@ -52,10 +38,7 @@ The alternatives, particularly _1. c4_ and _1. d4,_ are known to be more positio
 
 As a visual guide, I have included a board with arrows indicating these moves, where the colours correspond to the chart above.
 
-<img
-  src={first_moves_annotated}
-  alt="Board with arrows indicating first moves used"
-/>
+![Board with arrows indicating first moves used](first_moves_annotated.png)
 
 Each of these first moves leads to a variety of different openings, which I consider in the following section.
 
@@ -65,7 +48,7 @@ Beyond the first move, we can investigate the specific openings which were used 
 The second chart below shows how often each opening was used.
 The openings are grouped by the first move, and the colours correspond to the first chart so that it is clear to see which first moves lead to which openings.
 
-<img src={opening_categories} alt="Openings used" />
+![Openings used](opening_categories.png)
 
 I refer to these as opening categories, because each of the openings named in the chart above has multiple sub-variations within them.
 The Sicilian Defense, for example, can be divided into many variations: Najdorf, Scheveningen, Sveshnikov, Dragon, Alapin, Rossolimo, Taimanov, Richter-Rauzer, Grand Prix Attack, and so on.
@@ -81,7 +64,7 @@ In addition to counting the frequency of each opening, I was interested in seein
 The third chart below summarizes the performance of each opening, indicating the percentages of wins with white, draws, and wins with black.
 The number of games played in that opening are indicated in brackets.
 
-<img src={opening_performance} alt="Openings performance" />
+![Openings performance](opening_performance.png)
 
 In total, 59% of all games were drawn.
 This is not a surprise, especially at the highest level where there is little difference in skill level between players.
@@ -101,7 +84,7 @@ Right from the first move, black creates imbalance, and tries to convert this im
 However, it seems like this was unsuccessful.
 Black was unable to win a single game utilizing the Sicilian. Two thirds of Sicilian games were drawn, and the other third won by white.
 
-<img src={sicilian} alt="The Sicilian Defense" />
+![The Sicilian Defense](sicilian.png)
 
 _The Sicilian Defense_
 
@@ -109,7 +92,7 @@ By contrast, the Russian Game, also known as the Petrov Defense, (characterized 
 In all six Petrov games, white was unable to win. Black won a third of these games, and the other two thirds were drawn.
 Ian Nepomniachtchi, the tournament winner and next World Champion Challenger, utilized this defense in all of his games with black when faced with _1. e4_.
 
-<img src={petrov} alt="The Russian Game" />
+![The Russian Game](petrov.png)
 
 _The Russian Game_
 
@@ -122,7 +105,7 @@ Only 30% of Ruy Lopez games were drawn.
 70% of games were decisive, with white taking a slight edge, winning 40% of games, compared to black's 30%.
 Clearly, the choice to play the Ruy Lopez, also known as the Spanish, which begins after _1. e4 e5 2. Nf3 Nc6 3. Bb5_, was a double edged decision. You give yourself the chance to win, which also means the possibility of losing.
 
-<img src={ruy_lopez} alt="The Ruy Lopez" />
+![The Ruy Lopez](ruy_lopez.png)
 
 _The Ruy Lopez_
 

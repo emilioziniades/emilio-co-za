@@ -1,14 +1,8 @@
----
-title: "Welcome Downwell"
-date: "2021-12-03T14:33:06+02:00"
-description: "Welcome. Start here."
-type: "blog"
-page: "post"
-hero_image: "./hero.jpg"
-hero_image_alt: "Rocket lifting off"
-hero_image_credit_text: Bill Jelen
-hero_image_credit_link: "https://unsplash.com/photos/lDEMa5dPcNo"
----
++++
+title = "Welcome Downwell"
+date = "2021-12-03T14:33:06+02:00"
+description = "Welcome. Start here."
++++
 
 (note: this post used to live on my old blog, named Downwell. That blog has now been moved into a subdomain of my personal website. The name has changed but the intention remains the same.)
 

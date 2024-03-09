@@ -1,24 +1,11 @@
----
-title: "CryptoPunks, Inequality and Economic Research on the Blockchain"
-date: "2022-03-08T20:46:38+02:00"
-description: "On conducting economic research on blockchains, with a CryptoPunks case study."
-type: "blog"
-page: "post"
-hero_image: "./hero.jpg"
-hero_image_alt: "Blockchain drawing blurred"
-hero_image_credit_text: Shubham Dhage
-hero_image_credit_link: "https://unsplash.com/photos/T9rKvI3N0NM"
----
++++
+title = "CryptoPunks, Inequality and Economic Research on the Blockchain"
+date = "2022-03-08"
+description = "On conducting economic research on blockchains, with a CryptoPunks case study."
++++
 
-import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
-
-import figure1 from "./figure_1.png"
-import figure2 from "./figure_2.png"
-import figure3 from "./figure_3.png"
-import punks from "./punks.png"
-import InteractiveChart from "./interactiveChart.js"
-import TableOfContents from "../../../src/components/tableOfContents.js"
+<script defer src="./interactiveChart.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2"></script>
 
 ## Introduction
 
@@ -27,11 +14,11 @@ CryptoPunks are widely considered to be the first NFT project on the Ethereum bl
 This post will first briefly introduce CryptoPunks and NFTs. It then measures the distribution of CryptoPunks over time, deriving [Lorenz curves](https://en.wikipedia.org/wiki/Lorenz_curve) and [Gini coefficients](https://en.wikipedia.org/wiki/Gini_coefficient) as a measure of inequality of Punks (and the Ether value of those Punks).
 Finally, it considers, in general, the prospects for conducting economic research on blockchains.
 
-I have written a <Link to="../cryptopunks-technical">technical explainer</Link> as a companion to this post, which goes into more depth on certain topics.
+I have written a [technical explainer](@/blog/cryptopunks-technical/index.md) as a companion to this post, which goes into more depth on certain topics.
 
 ## CryptoPunks
 
-<img src={punks} alt="CryptoPunks" />
+<img src="./punks.png" alt="CryptoPunks" />
 
 _Image Source: [CryptoPunks website](https://www.larvalabs.com/public/images/product/cryptopunks/punk-variety-2x.png)_
 
@@ -52,7 +39,7 @@ This meant that interacting with the CryptoPunks smart contract programatically 
 
 The remainder of this paper tackles the research question: what is the distribution of CryptoPunks? Are they equally distributed among many addresses, or do a few addresses own most of the Punks? And how does the distribution of Punks change over time? Does it disperse over time, or does it concentrate? Also, not all Punks are equally valuable. Some Punks are sold for [millions of dollars](https://www.larvalabs.com/cryptopunks/details/5822), whilst other Punks sell for less. So I then consider how the ETH value of Punks is distributed across all Punk owners.
 
-I make use of two economic concepts to conduct this analysis: Lorenz curves and Gini coefficients. For more information, see the <Link to="../cryptopunks-technical">technical explainer</Link>.
+I make use of two economic concepts to conduct this analysis: Lorenz curves and Gini coefficients. For more information, see the [technical explainer](@/blog/cryptopunks-technical/index.md).
 
 Lorenz curves represent inequality graphically. They graph the cumulative percent of people versus the cumulative percent of resources. If resources were distributed equally, the Lorenz Curve would represent a diagonal line going through the origin and (1, 1). The further away the curve is from that diagonal line, the more unequal the market.
 
@@ -72,17 +59,17 @@ Again, it must be emphasized that there are two distinct distributions to consid
 
 Figure 1 shows the distribution of Punks, as represented by Lorenz curves, at two distinct points in time: in 2017 after all Punks had been claimed by their initial owners, and in March 2022.
 
-<img src={figure1} alt="Figure 1" />
+![Figure 1](figure_1.png)
 
 The main conclusion to be drawn here is that the distribution of Punks actually became more equal over time. Initially, after all Punks had been claimed, the Gini coefficient was 0.83. Looking at the blue line, the bottom 80% of Punk owners owned just over 10% of all Punks. Five years later, in March 2022, the Gini coefficient dropped to 0.597. This is still very unequal though, and considering the red line, you can see that the bottom 80% of Punk owners still only owned roughly 30% of all Punks. So, in scientific terms, the CryptoPunks market changed from being _very unequal_, to being _just slightly more equal but still quite unequal_.
 
 Figure 2 below shows a more gradual change in distribution. It has the same start and end points as Figure 1, but it includes 18 other intermediate points spaced approximately 4 months apart. The line colours form a gradient from blue to orange. Blue lines occured further in the past, and orange lines occured more recently. There was a noticeable jump that occured around April 2021. This is roughly in the period when the world was in the midst of a fervent NFT mania, just a month after the record breaking [auction](https://www.theverge.com/2021/3/11/22325054/beeple-christies-nft-sale-cost-everydays-69-million) of Beeple's The First 5000 Days at Christies. This booming NFT market has some similarities to the ICO (Initial Coin Offering) [boom of 2017](https://www.forbes.com/sites/jeffkauflin/2018/10/29/where-did-the-money-go-inside-the-big-crypto-icos-of-2017/?sh=5e1e5fd7261b). Interestingly, the Gini coefficient goes down during this period. This also corresponds with a doubling in the number of addresses that hold Punks, from 1073 in January 2021 to 2105 in April 2021.
 
-<img src={figure2} alt="Figure 2" />
+![Figure 2](figure_2.png)
 
 So far, I have only discussed the distribution of Punks tokens among addresses. Really, one shouldn't weight each Punk equally, since there is a large degree of variation in the prices that they are sold for. So, instead of considering the distribution of Punks themselves, one could consider the distribution of the Ether value of those Punks. I use the most recent sale price to represent the Ether value of a Punk. This accounts for the variations in prices. When one does this, the picture changes slightly, but not too significantly, as can be seen in Figure 3 below.
 
-<img src={figure3} alt="Figure 3" />
+![Figure 3](figure_3.png)
 
 The most salient point is that the Ether value of Punks actually becomes _more_ unequal for a period, before following the trend observed in Figures 1 and 2 of decreasing inequality and smaller Gini coefficients.
 The final Gini coefficient for the distribution of the Ether value of Punks is 0.65, which is higher than the Gini coefficient for Punks themselves, which was 0.60 at the same point in time.
@@ -94,7 +81,11 @@ This project was more an illustration of what is possible when conducting econom
 
 It is remarkable that we can retroactively inspect the state of a marketplace at any time in its history. To really emphasize this possibilty of 'time travel', I put together an interactive version of Figure 3 above. You can move the slider, and see how the Lorenz curve and Gini coefficient for the distribution of CryptoPunks changes over time.
 
-<InteractiveChart />
+<canvas id="interactive-chart"></canvas>
+
+<form style="display: flex; flex-direction: column;">
+    <input type="range" id="time-slider" name="time-slider" min="0" max="19" value="0"/>
+<form/>
 
 _Drag the slider above to view the distribution of the ETH value of Punks over time._
 

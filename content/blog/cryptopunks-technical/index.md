@@ -1,21 +1,10 @@
 ---
 title: "Technical Companion: CryptoPunks, Inequality and Economic Research on the Blockchain"
-date: "2022-03-15T20:46:38+02:00"
+date: "2022-03-15"
 description: "A technical explainer for the concepts mentioned in the post: CryptoPunks, Inequality and Economic Research on the Blockchain."
-type: "blog"
-page: "post"
-hero_image: "./hero.jpg"
-hero_image_alt: "Blockchain drawing black and white"
-hero_image_credit_text: Shubham Dhage
-hero_image_credit_link: "https://unsplash.com/photos/gC_aoAjQl2Q"
 ---
 
-import example1 from "./example_1.png"
-import example2 from "./example_2.png"
-import example3 from "./example_3.png"
-import { Link } from "gatsby"
-
-This technical write-up elaborates on some of the more detailed aspects of the research project discussed in <Link to="../cryptopunks"> this paper.</Link>
+This technical write-up elaborates on some of the more detailed aspects of the research project discussed in [this paper](@/blog/cryptopunks/index.md).
 
 ## CryptoPunks
 
@@ -69,7 +58,7 @@ Let's assume there are only 10 Punks and 5 people, and that each person owns exa
 
 Focus on the two colums in bold. Since at every point, the cumulative share of people is equal to the cumulative share of Punks, this scenario describes the equal distribution of Punks. In Example 1, I have plotted _cumulative share of people_ vs _cumulative share of Punks_.
 
-<img src={example1} alt="Example 1" />
+![Example 1](example_1.png)
 
 In Economic jargon, this is called a Lorenz curve. It graphically represent income or wealth (or Punks) distribution. It isn't actually curved yet, because we have graphed the situation of perfect equality. Consider a more unequal scenario: There are still 10 Punks and 5 people, but one person has 6 Punks, and everyone else only has 1 Punk. As a table, that would look like this.
 
@@ -83,9 +72,7 @@ In Economic jargon, this is called a Lorenz curve. It graphically represent inco
 
 Importantly, we have sorted the table from lowest number of Punks owned to highest number of Punks owned. Here, the bottom 80% of people own only 40% of all Punks. The Lorenz Curve for this scenario is pictured in Example 2.
 
-<!---- insert example_2.png here --->
-
-<img src={example2} alt="Example 2" />
+![Example 2](example_2.png)
 
 As you can see, situations of inequality are graphically described by deviations from the dashed diagonal line representing equality. The more unequal the distribution, the further away the Lorenz Curve is from the line of equality.
 
@@ -93,7 +80,7 @@ As you can see, situations of inequality are graphically described by deviations
 
 But how do we quantify exactly how far away the Lorenz curve is from the line of equality? Let's look at the Lorenz curve from Example 2, and shade the region between the line of equality and the Lorenz curve in red, and the region between the Lorenz curve and the x-axis in blue.
 
-<img src={example3} alt="Example 3" />
+![Example 3](example_3.png)
 
 As the Lorenz curve moves further away from the line of equality, the red region grows bigger, and the blue region grows smaller. We can represent the degree of inequality as _the fraction of the red area over the sum of the red and blue areas_. As a formula,
 

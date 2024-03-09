@@ -1,13 +1,7 @@
 ---
 title: "On Cryptocurrencies"
-date: "2022-02-11T19:12:09+02:00"
+date: "2022-02-11"
 description: "Introductory thoughts about crypto from an economist's perspective."
-type: "blog"
-page: "post"
-hero_image: "./hero.jpg"
-hero_image_alt: "Blockchain animated graphic"
-hero_image_credit_text: Pierre Borthiry
-hero_image_credit_link: "https://unsplash.com/photos/vBCVcWUyvyM"
 ---
 
 Cryptocurrencies are strange: they are the marriage of economics and computer science.
