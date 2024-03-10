@@ -6,7 +6,7 @@ It's a home for the [things I write](@/blog/_index.md) and the [software I build
 
 I'm a software developer working in the finance industry.
 My main focus has been backend development, DevOps pipelines and automated infrastructure provisioning.
-I'm also interested in open source software, and you can see some of my contributions here (TODO).
+I'm also interested in open source software, here are [some of my contributions](@/code/_index.md).
 
-I'm loving my current work, but I also won't close my self off to new opportunities.
+I'm happy at my current work, but I also won't close myself off to new opportunities.
 You can [learn more about me](@/about/_index.md), and if you think I would be a good fit, feel free to [submit a form](@/contact/_index.md).

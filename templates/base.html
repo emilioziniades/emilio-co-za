@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Emilio Ziniades</title>
-        <link href="/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <a href="/" class="site-title">
-                    <h1>Emilio Ziniades</h1>
-                </a>
-                <nav class="site-nav">
-                    <li>
-                        <a href="{{ get_url(path='@/blog/_index.md') }}">Blog</a>
-                    </li>
-                    <li>
-                        <a href="{{ get_url(path='@/code/_index.md') }}">Code</a>
-                    </li>
-                    <li>
-                        <a href="{{ get_url(path='@/about/_index.md') }}">About</a>
-                    </li>
-                    <li>
-                        <a href="{{ get_url(path='@/contact/_index.md') }}">Contact</a>
-                    </li>
-                </nav>
-            </header>
-            <section>
-                {% block content %}{% endblock %}
-            </section>
-        </div>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Emilio Ziniades</title>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="/" class="site-title">
+          <h1>Emilio Ziniades</h1>
+        </a>
+        <nav class="site-nav">
+          <li>
+            <a href="{{ get_url(path='@/blog/_index.md') }}">Blog</a>
+          </li>
+          <li>
+            <a href="{{ get_url(path='@/code/_index.md') }}">Code</a>
+          </li>
+          <li>
+            <a href="{{ get_url(path='@/about/_index.md') }}">About</a>
+          </li>
+          <li>
+            <a href="{{ get_url(path='@/contact/_index.md') }}">Contact</a>
+          </li>
+        </nav>
+      </header>
+      <section>
+        {% block content %}{% endblock %}
+      </section>
+    </div>
+  </body>
 </html>
