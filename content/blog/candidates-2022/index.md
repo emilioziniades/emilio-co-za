@@ -1,8 +1,8 @@
----
-title: "Candidates 2022: Opening Analysis"
-date: "2022-07-22"
-description: "An analysis of the chess openings used in the FIDE 2022 Candidates Tournament."
----
++++
+title = "Candidates 2022: Opening Analysis"
+date = "2022-07-22"
+description = "An analysis of the chess openings used in the FIDE 2022 Candidates Tournament."
++++
 
 ## Introduction
 

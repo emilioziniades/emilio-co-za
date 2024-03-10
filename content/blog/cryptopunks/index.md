@@ -18,7 +18,7 @@ I have written a [technical explainer](@/blog/cryptopunks-technical/index.md) as
 
 ## CryptoPunks
 
-<img src="./punks.png" alt="CryptoPunks" />
+![CryptoPunks](punks.png)
 
 _Image Source: [CryptoPunks website](https://www.larvalabs.com/public/images/product/cryptopunks/punk-variety-2x.png)_
 

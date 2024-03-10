@@ -1,8 +1,8 @@
----
-title: "Technical Companion: CryptoPunks, Inequality and Economic Research on the Blockchain"
-date: "2022-03-15"
-description: "A technical explainer for the concepts mentioned in the post: CryptoPunks, Inequality and Economic Research on the Blockchain."
----
++++
+title = "Technical Companion: CryptoPunks, Inequality and Economic Research on the Blockchain"
+date = "2022-03-15"
+description = "A technical explainer for the concepts mentioned in the post: CryptoPunks, Inequality and Economic Research on the Blockchain."
++++
 
 This technical write-up elaborates on some of the more detailed aspects of the research project discussed in [this paper](@/blog/cryptopunks/index.md).
 

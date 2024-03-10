@@ -1,4 +1,4 @@
 {
-  "blank_line_after_tag": "load,extends,include",
+  "blank_line_after_tag": "load,extends,include,block,endmacro",
   "indent": "2"
 }

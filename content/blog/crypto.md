@@ -1,8 +1,8 @@
----
-title: "On Cryptocurrencies"
-date: "2022-02-11"
-description: "Introductory thoughts about crypto from an economist's perspective."
----
++++
+title = "On Cryptocurrencies"
+date = "2022-02-11"
+description = "Introductory thoughts about crypto from an economist's perspective."
++++
 
 Cryptocurrencies are strange: they are the marriage of economics and computer science.
 Since graduating with an economics degree in 2019, I have spent the last two years exploring these novel technologies. I felt comfortable enough approaching it from an economics perspective: I applied the concepts of money, incentives and game theory that I had been studying for the past few years.

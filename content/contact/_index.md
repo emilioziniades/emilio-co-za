@@ -3,6 +3,9 @@ title = "Contact"
 template = "contact.html"
 +++
 
+---
+title: "Contact"
+---
 ## Get in touch!
 
 Have any questions, want to work together, or just want to chat. Fill

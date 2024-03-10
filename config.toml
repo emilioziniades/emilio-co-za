@@ -1,4 +1,6 @@
 base_url = "https://emilio.co.za"
+author = "Emiio Ziniades"
+
 compile_sass = true
 build_search_index = false
 

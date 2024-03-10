@@ -1,0 +1,12 @@
+{% macro table_of_contents(toc) %}
+  {% if toc %}
+    <ul>
+      {% for header in toc %}
+        <li>
+          <a href="{{ header.permalink | safe }}">{{ header.title }}</a>
+          {% if header.children %}{{ self::table_of_contents(toc=header.children) }}{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}

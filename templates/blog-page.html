@@ -1,6 +1,21 @@
 {% extends "base.html" %}
 
+{% import "macros.html" as macros %}
+{% macro table_of_contents(toc) %}
+  {% if toc %}
+    <ul>
+      {% for header in toc %}
+        <li>
+          <a href="{{ header.permalink | safe }}">{{ header.title }}</a>
+          {% if header.children %}{{ macros::table_of_contents(toc=header.children) }}{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}
+
 {% block content %}
+
   <h1 class="title">{{ page.title }}</h1>
   <p class="subtitle">
     <strong>{{ page.date }}</strong>
@@ -8,5 +23,6 @@
   <p>
     <i>{{ page.description }}</i>
   </p>
+  {% if page.toc %}{{ self::table_of_contents(toc=page.toc) }}{% endif %}
   {{ page.content | safe }}
 {% endblock content %}
