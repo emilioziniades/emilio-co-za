@@ -19,9 +19,6 @@
           buildInputs = [
             pkgs.zola
           ];
-          shellHook = ''
-            $SHELL
-          '';
         };
       }
     );
