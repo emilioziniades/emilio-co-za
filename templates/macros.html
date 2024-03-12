@@ -10,3 +10,10 @@
     </ul>
   {% endif %}
 {% endmacro %}
+
+{% macro nav_item(name, path) %}
+  {% set url = get_url(path=path) %}
+  <li class="{% if current_url is starting_with(url) %}active{% endif %}">
+    <a href="{{ url }}">{{ name }}</a>
+  </li>
+{% endmacro %}

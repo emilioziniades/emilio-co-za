@@ -1,3 +1,4 @@
+{% import "macros.html" as macros %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,18 +13,10 @@
           <h1>Emilio Ziniades</h1>
         </a>
         <nav class="site-nav">
-          <li>
-            <a href="{{ get_url(path='@/blog/_index.md') }}">Blog</a>
-          </li>
-          <li>
-            <a href="{{ get_url(path='@/code/_index.md') }}">Code</a>
-          </li>
-          <li>
-            <a href="{{ get_url(path='@/about/_index.md') }}">About</a>
-          </li>
-          <li>
-            <a href="{{ get_url(path='@/contact/_index.md') }}">Contact</a>
-          </li>
+          {{ macros::nav_item(name="Blog", path="@/blog/_index.md") }}
+          {{ macros::nav_item(name="Code", path="@/code/_index.md") }}
+          {{ macros::nav_item(name="About", path="@/about/_index.md") }}
+          {{ macros::nav_item(name="Contact", path="@/contact/_index.md") }}
         </nav>
       </header>
       <section>

@@ -65,7 +65,9 @@ header {
     }
 
     .active {
-      text-decoration: underline;
+      a {
+        text-decoration: underline;
+      }
     }
   }
 }
