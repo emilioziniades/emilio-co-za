@@ -2,18 +2,14 @@
   // border: 1px black solid;
 }
 
-@import "fonts";
+body {
+  font-family: Arial, sans-serif;
+}
 
 $black: #000000;
 
-p {
-  font-family: "NotoSerif";
-  font-weight: normal;
-  font-style: normal;
-}
-
 .container {
-  margin: 0 25%;
+  margin: 0 10%;
 }
 
 h1,
@@ -22,12 +18,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "NotoSans";
-  // font-family: "MonaspaceArgon";
-  // font-family: "NotoSerif";
-  font-weight: bold;
-  font-style: normal;
-
   a {
     text-decoration: none;
     color: $black;
@@ -36,10 +26,6 @@ h6 {
 
 header {
   margin-top: 1rem;
-  font-family: "NotoSans";
-  // font-family: "MonaspaceArgon";
-  font-weight: bold;
-  font-style: normal;
   margin: 0;
   padding: 0;
   display: flex;
