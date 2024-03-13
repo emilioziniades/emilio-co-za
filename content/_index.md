@@ -2,6 +2,7 @@
 +++
 
 Hey! I'm Emilio and this is my website.
+
 It's a home for the [things I write](@/blog/_index.md) and the [software I build](@/code/_index.md).
 
 I'm a software developer working in the finance industry.

@@ -7,18 +7,18 @@
     <link href="/style.css" rel="stylesheet" />
   </head>
   <body>
+    <header>
+      <a href="/" class="site-title">
+        <h1>Emilio Ziniades</h1>
+      </a>
+      <nav>
+        {{ macros::nav_item(name="Blog", path="@/blog/_index.md") }}
+        {{ macros::nav_item(name="Code", path="@/code/_index.md") }}
+        {{ macros::nav_item(name="About", path="@/about/_index.md") }}
+        {{ macros::nav_item(name="Contact", path="@/contact/_index.md") }}
+      </nav>
+    </header>
     <div class="container">
-      <header>
-        <a href="/" class="site-title">
-          <h1>Emilio Ziniades</h1>
-        </a>
-        <nav class="site-nav">
-          {{ macros::nav_item(name="Blog", path="@/blog/_index.md") }}
-          {{ macros::nav_item(name="Code", path="@/code/_index.md") }}
-          {{ macros::nav_item(name="About", path="@/about/_index.md") }}
-          {{ macros::nav_item(name="Contact", path="@/contact/_index.md") }}
-        </nav>
-      </header>
       <section>
         {% block content %}{% endblock %}
       </section>

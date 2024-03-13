@@ -1,5 +1,11 @@
 {% extends "base.html" %}
+
 {% block content %}
-    {{ section.content | safe }}
+
+  {% set image = resize_image(path="maki.png", width=300, height=300, op="fit") %}
+  <div class="hero-image-container">
+    <img src="{{ image.url }}" />
+  </div>
+  {{ section.content | safe }}
 </br>
 {% endblock content %}
