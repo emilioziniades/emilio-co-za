@@ -1,25 +1,24 @@
 {
   description = "Website that lives at https://emilio.co.za";
 
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
-    flake-utils.url = "github:numtide/flake-utils/main";
-  };
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
   outputs = {
     self,
     nixpkgs,
-    flake-utils,
-  }:
-    flake-utils.lib.eachDefaultSystem (
-      system: let
-        pkgs = nixpkgs.legacyPackages.${system};
-      in {
-        devShell = pkgs.mkShell {
+  }: let
+    forAllSystems = fn:
+      nixpkgs.lib.genAttrs
+      ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"]
+      (system: fn system nixpkgs.legacyPackages.${system});
+  in {
+    devShells = forAllSystems (system: pkgs:
+      with pkgs; {
+        default = mkShell {
           buildInputs = [
-            pkgs.zola
+            zola
           ];
         };
-      }
-    );
+      });
+  };
 }
