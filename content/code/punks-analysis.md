@@ -3,6 +3,7 @@ title = "Punks Analysis"
 link = "https://github.com/emilioziniades/punks-analysis"
 tags = "Python, Matplotlib, Pandas, Web3py, ChartJS, Data Analysis, Data Vizualization, NFT, Cryptocurrency"
 weight = 3
+date = "1900-01-01"
 +++
 
 Investigation into the distribution of CryptoPunk NFTs across addresses on the Ethereum blockchain over time. A full write-up can be found [here](./write/cryptopunks).

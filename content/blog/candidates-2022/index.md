@@ -105,7 +105,7 @@ Only 30% of Ruy Lopez games were drawn.
 70% of games were decisive, with white taking a slight edge, winning 40% of games, compared to black's 30%.
 Clearly, the choice to play the Ruy Lopez, also known as the Spanish, which begins after _1. e4 e5 2. Nf3 Nc6 3. Bb5_, was a double edged decision. You give yourself the chance to win, which also means the possibility of losing.
 
-![The Ruy Lopez](ruy_lopez.png)
+![The Ruy Lopez](ruylopez.png)
 
 _The Ruy Lopez_
 

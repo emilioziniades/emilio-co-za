@@ -1,15 +1,57 @@
-base_url = "https://emilio.co.za"
+title = "Emilio Ziniades"
 author = "Emiio Ziniades"
+base_url = "https://emilio.co.za"
 
-compile_sass = true
+compile_sass = false
 build_search_index = false
+theme = "zola-bearblog"
+
+taxonomies = [
+  { name = "categories", feed = true },
+  { name = "tags", feed = true },
+]
+
+default_language = "en"
+
+[translations]
+no_posts = "No posts yet"
+remove_filter = "Remove filter"
+filtering_for = "Filtering for"
+made_with = "Made with"
 
 [markdown]
 highlight_code = true
+highlight_theme = "dracula"
 
 [link_checker]
 internal_level = "error"
 external_level = "error"
 
-[extra]
-# Put all your custom variables here
+[extra.table_of_contents]
+show = true
+max_level = 6
+visible_on_load = true
+
+[[extra.main_menu]]
+name = "Home"
+url = "/"
+
+[[extra.main_menu]]
+name = "Blog"
+url = "@/blog/_index.md"
+
+[[extra.main_menu]]
+name = "Code"
+url = "@/code/_index.md"
+
+[[extra.main_menu]]
+name = "Open Source"
+url = "@/open-source.md"
+
+[[extra.main_menu]]
+name = "About"
+url = "@/about.md"
+
+[[extra.main_menu]]
+name = "Contact"
+url = "@/contact.md"

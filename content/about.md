@@ -1,6 +1,6 @@
 +++
 title = "About"
-template = "about.html"
+extra.hide_table_of_contents = true
 +++
 
 ## who am I?
@@ -64,4 +64,6 @@ In particular, I believe there is an opportunity to use the Lightning Network to
 
 ## maybe we could work together?
 
-Currently, I am in the process of looking for work as a data analyst, software engineer, developer. I am open to remote work. If you are interested, please do [contact me](@/contact/_index.md).
+Currently, I am in the process of looking for work as a data analyst, software engineer, developer.
+I am open to remote work.
+If you are interested, please do [contact me](@/contact.md).

@@ -1,6 +1,6 @@
 +++
 title = "Contact"
-template = "contact.html"
+extra.hide_table_of_contents = true
 +++
 
 ## Get in touch!
