@@ -29,7 +29,7 @@ external_level = "error"
 
 [extra.table_of_contents]
 show = true
-max_level = 6
+max_level = 4
 visible_on_load = true
 
 [[extra.main_menu]]
