@@ -41,7 +41,7 @@ name = "Blog"
 url = "@/blog/_index.md"
 
 [[extra.main_menu]]
-name = "Open Source"
+name = "Open-source"
 url = "@/open-source.md"
 
 [[extra.main_menu]]

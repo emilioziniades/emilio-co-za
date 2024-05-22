@@ -1,5 +1,5 @@
 +++
-title = "Open Source Contributions"
+title = "Open-source contributions"
 +++
 
 - [`lightningnetwork/lnd`](https://github.com/lightningnetwork/lnd) - [#7473](https://github.com/lightningnetwork/lnd/pull/7473)
