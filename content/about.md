@@ -37,7 +37,7 @@ It became apparent to me that cryptocurrencies represent the merging of economic
 Growing up in South Africa, I am very sensitive to social and economic inequality, and this perspective informs my approach to cryptocurrencies.
 Whilst they have enormous potential, I also recognize the very real risks of wealth concentration that exist.
 
-More recently, I have been [bazaar-pilled](https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar). As a frequent user of open-source software, I became interested in contributing back to the software that I use. You can see some of my contributions [here](@/open-source.md).
+More recently, I have been [bazaar-pilled](https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar). As a frequent user of open-source software, I became interested in contributing back to the software that I use. You can see some of my contributions [here](@/open-source.md#contributions).
 
 ## maybe we could work together?
 

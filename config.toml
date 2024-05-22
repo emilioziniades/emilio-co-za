@@ -23,6 +23,11 @@ made_with = "Made with"
 highlight_code = true
 highlight_theme = "dracula"
 
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
 [link_checker]
 internal_level = "error"
 external_level = "error"
