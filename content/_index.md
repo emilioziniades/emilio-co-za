@@ -3,7 +3,7 @@
 
 Hey! I'm Emilio.
 
-I'm a software developer, chess-enjoyer and my yiayia's [palikari](https://greekerthanthegreeks.com/lost-in-translation-word-of-day-palikari/).
+I'm a software developer, chess-enjoyer, and my yiayia's [palikari](https://greekerthanthegreeks.com/lost-in-translation-word-of-day-palikari/).
 
 I live in Cape Town, South Africa, and work in the finance industry.
 My main focus is backend development, developer tools and devops.
