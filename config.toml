@@ -21,7 +21,7 @@ made_with = "Made with"
 
 [markdown]
 highlight_code = true
-highlight_theme = "dracula"
+highlight_theme = "ayu-light"
 
 [slugify]
 paths = "on"
