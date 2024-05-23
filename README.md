@@ -1,6 +1,6 @@
 # [emilio.co.za](https://emilio.co.za)
 
-[Demo Screenshot](./github/assets/screenshot.png)
+![Demo Screenshot](./.github/assets/screenshot.png)
 
 A personal website built with [Zola](https://getzola.org), using the [zola-bearblog](https://codeberg.org/alanpearce/zola-bearblog/) theme.
 
