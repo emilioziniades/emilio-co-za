@@ -18,6 +18,8 @@ no_posts = "No posts yet"
 remove_filter = "Remove filter"
 filtering_for = "Filtering for"
 made_with = "Made with"
+site = "site"
+table_of_contents = "Table of contents"
 
 [markdown]
 highlight_code = true
