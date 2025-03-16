@@ -1,7 +1,7 @@
 title = "Emilio Ziniades"
 author = "Emiio Ziniades"
 description = "Emilio Ziniades' personal website"
-base_url = "https://emilio.co.za"
+base_url = "https://emilio.co.za/"
 
 compile_sass = false
 build_search_index = false
