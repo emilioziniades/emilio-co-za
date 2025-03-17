@@ -2,7 +2,7 @@
 for = "/*"
 
 [headers.values]
-Content-Security-Policy = "default-src 'none'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self'; img-src 'self'; base-uri 'self'; form-action 'self'; style-src 'self' 'sha256-itnliqDZ0/xZx5GxsidJhy8ecoyivbhlXtfrx/GFdDM=' 'sha256-p5EfRIhWJi7Zh7WJil3mpIVCZvcu+zebWbMe6B0so8A='"
+Content-Security-Policy = "default-src 'none'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self'; img-src 'self'; base-uri 'self'; form-action 'self'; style-src 'self' 'sha256-ntNLOtdK8K/6iIzMWxLq7n+E8ilzzYAQZQNx2fl21mI=' 'sha256-p5EfRIhWJi7Zh7WJil3mpIVCZvcu+zebWbMe6B0so8A='"
 
 [build]
 publish = "public"
