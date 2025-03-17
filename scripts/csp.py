@@ -8,11 +8,12 @@
 # styles with css files creates weird splashes.
 
 import base64
+import os
+from dataclasses import dataclass
 from hashlib import sha256
 from html.parser import HTMLParser
-import os
 from pathlib import Path
-from dataclasses import dataclass
+
 import toml
 
 
