@@ -12,4 +12,4 @@ command = "zola build --base-url $DEPLOY_PRIME_URL"
 for = "/*"
 [headers.values]
 # see "Starter Policy" on https://content-security-policy.com/
-Content-Security-Policy = "default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self'"
+Content-Security-Policy = "default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self' 'sha256-p5EfRIhWJi7Zh7WJil3mpIVCZvcu+zebWbMe6B0so8A=';base-uri 'self';form-action 'self'"
