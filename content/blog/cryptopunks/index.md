@@ -4,8 +4,8 @@ date = "2022-03-08"
 description = "On conducting economic research on blockchains, with a CryptoPunks case study."
 +++
 
-<script defer src="./interactiveChart.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2"></script>
+<script defer src="./interactiveChart.js"></script>
 
 ## Introduction
 
@@ -81,7 +81,7 @@ This project was more an illustration of what is possible when conducting econom
 
 It is remarkable that we can retroactively inspect the state of a marketplace at any time in its history. To really emphasize this possibilty of 'time travel', I put together an interactive version of Figure 3 above. You can move the slider, and see how the Lorenz curve and Gini coefficient for the distribution of CryptoPunks changes over time.
 
-<canvas id="interactive-chart"></canvas>
+<canvas id="interactive-chart" class="bg-white"></canvas>
 
 <form class="flex-container flex-column">
     <input type="range" id="time-slider" name="time-slider" min="0" max="19" value="0"/>
