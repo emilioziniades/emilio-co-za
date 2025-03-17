@@ -83,7 +83,7 @@ It is remarkable that we can retroactively inspect the state of a marketplace at
 
 <canvas id="interactive-chart"></canvas>
 
-<form style="display: flex; flex-direction: column;">
+<form class="flex-container flex-column">
     <input type="range" id="time-slider" name="time-slider" min="0" max="19" value="0"/>
 <form/>
 
