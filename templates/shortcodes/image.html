@@ -1,6 +1,4 @@
 {% set image = resize_image(path=path, width=width, height=height, op=op) %}
-<div style="text-align: center;">
-  <img src="{{ image.url }}"
-       alt="{{ alt }}"
-       style="max-height: {{ max_height }}" />
+<div class="image-container">
+  <img src="{{ image.url }}" alt="{{ alt }}" class="{{ class }}" />
 </div>

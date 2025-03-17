@@ -12,4 +12,4 @@ I'm also interested in open-source software, and here are [some of my contributi
 I'm happy at my current job, but I also won't close myself off to new opportunities.
 You can [learn more about me](@/about.md), and if you think I would be a good fit, feel free to [reach out](mailto:emilioziniades@gmail.com).
 
-{{ image(path="maki.png", alt="Maki on balloon", width=300, height=300, op="fit", max_height="30vh") }}
+{{ image(path="maki.png", alt="Maki on balloon", height=300, width=300, op="fit", class="hero-image") }}
