@@ -57,7 +57,7 @@ class InlineStyleParser(HTMLParser):
 # All from Starter Policy (https://content-security-policy.com/), except style-src
 CONTENT_SECURITY_POLICIES = [
     ContentSecurityPolicy("default-src", ["'none'"]),
-    ContentSecurityPolicy("script-src", ["'self'"]),
+    ContentSecurityPolicy("script-src", ["'self'", "https://cdn.jsdelivr.net"]),
     ContentSecurityPolicy("connect-src", ["'self'"]),
     ContentSecurityPolicy("img-src", ["'self'"]),
     ContentSecurityPolicy("base-uri", ["'self'"]),
