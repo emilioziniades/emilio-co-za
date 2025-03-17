@@ -17,6 +17,7 @@
         default = mkShell {
           buildInputs = [
             zola
+            uv
           ];
         };
       });
