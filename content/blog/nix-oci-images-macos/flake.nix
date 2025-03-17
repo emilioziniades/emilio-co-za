@@ -15,7 +15,7 @@
       system: let
         pkgs = nixpkgs.legacyPackages.${system};
       in {
-        packages.docker = pkgs.dockerTools.buildLayeredImage {
+        packages.container = pkgs.dockerTools.buildLayeredImage {
           name = "cowsay-hello-world";
           tag = "latest";
           contents = [pkgs.cowsay];

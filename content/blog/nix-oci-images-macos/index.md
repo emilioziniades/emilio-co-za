@@ -28,13 +28,13 @@ Here is the `flake.nix`.
 {{ include(path="content/blog/nix-oci-images-macos/flake.nix") }}
 ```
 
-The flake is a little boilerplate-y, but the important part is the `packages.docker` output that calls the `dockerTools.buildLayeredImage` function.
+The flake is a little boilerplate-y, but the important part is the `packages.container` output that calls the `dockerTools.buildLayeredImage` function.
 In addition to the image name and tag, we include `cowsay` and set the `CMD` for the image.
 
 Now, if I naively try to build this on my MacOS machine, the build simply hangs.
 
 ```
-$ nix build .#docker
+$ nix build .#container
 ... building cowsay-hello-world-customisation-layer
 ```
 
@@ -82,10 +82,10 @@ Then, run `darwin-rebuild switch` to apply the new configuration. You should see
 To use the builder, we invoke `nix build` with some extra flags.
 
 ```bash
-nix build --builders 'linux-builder x86_64-linux /etc/nix/builder_ed25519' .#packages.x86_64-linux.docker
+nix build --builders 'linux-builder x86_64-linux /etc/nix/builder_ed25519' .#packages.x86_64-linux.container
 ```
 
-Now, we are being explicit about which architecture the package should be built for: `.#packages.x86_64-linux.docker`.
+Now, we are being explicit about which architecture the package should be built for: `.#packages.x86_64-linux.container`.
 
 Also, the `--builders` flag expects a string in a certain format. We passed it `'<host name> <platform> <SSH identity file>'`.
 `nix-darwin` makes things easy for us by setting up an SSH configuration file for a host named `linux-builder` so we do not need to specify the full URI of the remote builder.
