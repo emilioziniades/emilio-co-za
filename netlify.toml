@@ -2,7 +2,7 @@
 for = "/*"
 
 [headers.values]
-Content-Security-Policy = "default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'self'; form-action 'self'; style-src 'self' 'sha256-p5EfRIhWJi7Zh7WJil3mpIVCZvcu+zebWbMe6B0so8A=' 'sha256-JarC32DshGM2JMBsGCZsVmtlSmzJbeeSTg4eDL0dOGs='"
+Content-Security-Policy = "default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'self'; form-action 'self'; style-src 'self' 'sha256-JarC32DshGM2JMBsGCZsVmtlSmzJbeeSTg4eDL0dOGs=' 'sha256-p5EfRIhWJi7Zh7WJil3mpIVCZvcu+zebWbMe6B0so8A='"
 
 [build]
 publish = "public"

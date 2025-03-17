@@ -22,7 +22,7 @@ class ContentSecurityPolicy:
     sources: list[str]
 
     def __str__(self) -> str:
-        sources = " ".join(f"'{src}'" for src in self.sources)
+        sources = " ".join(f"'{src}'" for src in sorted(self.sources))
         return f"{self.directive} {sources}"
 
 
