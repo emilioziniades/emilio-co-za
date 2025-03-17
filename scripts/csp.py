@@ -23,7 +23,7 @@ class ContentSecurityPolicy:
     sources: list[str]
 
     def __str__(self) -> str:
-        sources = " ".join(f"'{src}'" for src in sorted(self.sources))
+        sources = " ".join(f"{src}" for src in sorted(self.sources))
         return f"{self.directive} {sources}"
 
 
@@ -56,12 +56,12 @@ class InlineStyleParser(HTMLParser):
 
 # All from Starter Policy (https://content-security-policy.com/), except style-src
 CONTENT_SECURITY_POLICIES = [
-    ContentSecurityPolicy("default-src", ["none"]),
-    ContentSecurityPolicy("script-src", ["self"]),
-    ContentSecurityPolicy("connect-src", ["self"]),
-    ContentSecurityPolicy("img-src", ["self"]),
-    ContentSecurityPolicy("base-uri", ["self"]),
-    ContentSecurityPolicy("form-action", ["self"]),
+    ContentSecurityPolicy("default-src", ["'none'"]),
+    ContentSecurityPolicy("script-src", ["'self'"]),
+    ContentSecurityPolicy("connect-src", ["'self'"]),
+    ContentSecurityPolicy("img-src", ["'self'"]),
+    ContentSecurityPolicy("base-uri", ["'self'"]),
+    ContentSecurityPolicy("form-action", ["'self'"]),
 ]
 BUILD_DIRECTORY = Path(__file__).parent.parent / "public"
 NETLIFY_CONFIG_FILE = Path(__file__).parent.parent / "netlify.toml"
@@ -69,7 +69,7 @@ NETLIFY_CONFIG_FILE = Path(__file__).parent.parent / "netlify.toml"
 
 def main():
     inline_style_hashes = get_inline_style_hashes(BUILD_DIRECTORY)
-    style_src_sources = ["self"] + list(inline_style_hashes)
+    style_src_sources = ["'self'"] + list(f"'{i}'" for i in inline_style_hashes)
     style_src_policy = ContentSecurityPolicy("style-src", style_src_sources)
 
     csp_header = ContentSecurityPolicyHeader(
