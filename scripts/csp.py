@@ -50,7 +50,6 @@ class InlineStyleParser(HTMLParser):
 
     def handle_data(self, data: str):
         if self.in_inline_style_tag:
-            print(data)
             self.inline_styles.append(data)
 
 
