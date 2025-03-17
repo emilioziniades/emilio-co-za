@@ -18,6 +18,7 @@
           buildInputs = [
             zola
             uv
+            just
           ];
         };
       });
