@@ -7,3 +7,9 @@ ZOLA_VERSION = "0.20.0"
 
 [context.deploy-preview]
 command = "zola build --base-url $DEPLOY_PRIME_URL"
+
+[[headers]]
+for = "/*"
+[headers.values]
+# see "Starter Policy" on https://content-security-policy.com/
+Content-Security-Policy = "default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self'"
