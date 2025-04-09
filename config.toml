@@ -20,7 +20,7 @@ remove_filter = "Remove filter"
 filtering_for = "Filtering for"
 made_with = "Made with"
 site = "site"
-table_of_contents = "Table of contents"
+table_of_contents = "Contents"
 
 [markdown]
 highlight_code = true
